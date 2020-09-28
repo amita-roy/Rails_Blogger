@@ -110,16 +110,6 @@ GEM
     nio4r (2.5.4-java)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
-<<<<<<< HEAD
-=======
-    nokogiri (1.10.10-java)
-    paperclip (6.1.0)
-      activemodel (>= 4.2.0)
-      activesupport (>= 4.2.0)
-      mime-types
-      mimemagic (~> 0.3.0)
-      terrapin (~> 0.6.0)
->>>>>>> 02aa4511d342cb758e3f8f20aecc90b325f5e334
     pg (1.2.3)
     public_suffix (4.0.6)
     puma (4.3.6)
@@ -233,10 +223,6 @@ DEPENDENCIES
   capybara (>= 2.15)
   jbuilder (~> 2.7)
   listen (~> 3.2)
-<<<<<<< HEAD
-=======
-  paperclip
->>>>>>> 02aa4511d342cb758e3f8f20aecc90b325f5e334
   pg
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.3)
