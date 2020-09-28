@@ -1,5 +1,7 @@
+<%= stylesheet_link_tag 'styles' %>
+
 <h1><%= @article.title %></h1>
-<p><%= image_tag @article.image.url %></p>
+<%= image_tag @article.image.url(:thumb) %>
 
 <p><%= @article.body %></p>
 <%= 
