@@ -1,11 +1,18 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.0'
+ruby '2.7.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 # Use sqlite3 as the database for Active Record
+group :development, :test do
+  gem 'sqlite3'
+ end
+ 
+ group :production do
+   gem 'pg'
+ end
 
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
@@ -21,15 +28,6 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-group :development, :test do
- gem 'sqlite3'
-end
-
-group :production do
-  gem 'pg'
-end
-
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
